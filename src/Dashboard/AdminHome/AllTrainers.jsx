@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { FaTrademark, FaTrashAlt, FaUsers } from "react-icons/fa";
 import { axiosPublic } from "../../Hooks/useAxiosPublic";
-import Swal from "sweetalert2";
+// import Swal from "sweetalert2";
 import { axiosSecure } from './../../Hooks/useAxiosSecure';
 
 
@@ -23,13 +23,13 @@ const AllTrainers = () => {
             console.log(res.data)
             if(res.data.modifinedCount > 1){
                 // refetch()
-                Swal.fire({
-                    position: "top-end",
-                    icon: "success",
-                    title:`${user.name} is an Admin Now`,
-                    showConfirmButton: false,
-                    timer: 1500
-                  });
+                // Swal.fire({
+                //     position: "top-end",
+                //     icon: "success",
+                //     title:`${user.name} is an Admin Now`,
+                //     showConfirmButton: false,
+                //     timer: 1500
+                //   });
             }
         })
     }

@@ -1,4 +1,4 @@
-import Swal from "sweetalert2";
+// import Swal from "sweetalert2";
 import { axiosPublic } from "../../Hooks/useAxiosPublic";
 import useAuth from "../../Hooks/useAuth";
 
@@ -14,13 +14,13 @@ const NewsletterSection = () => {
         .then(res => {
             if (res.data.insertedId) {
                 console.log('user added to the database')
-                Swal.fire({
-                    position: 'top-end',
-                    icon: 'success',
-                    title: 'User created successfully.',
-                    showConfirmButton: false,
-                    timer: 1500
-                });
+                // Swal.fire({
+                //     position: 'top-end',
+                //     icon: 'success',
+                //     title: 'User created successfully.',
+                //     showConfirmButton: false,
+                //     timer: 1500
+                // });
                 
             }
         })

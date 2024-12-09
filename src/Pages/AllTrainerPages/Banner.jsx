@@ -1,6 +1,6 @@
 import { useForm } from "react-hook-form";
 import { axiosSecure } from "../../Hooks/useAxiosSecure";
-import Swal from "sweetalert2";
+// import Swal from "sweetalert2";
 import { axiosPublic } from "../../Hooks/useAxiosPublic";
 import useAuth from "../../Hooks/useAuth";
 
@@ -22,13 +22,13 @@ const Banner = () => {
             if (res.data.insertedId) {
                 console.log('user added to the database')
                 reset();
-                Swal.fire({
-                    position: 'top-end',
-                    icon: 'success',
-                    title: 'User created successfully.',
-                    showConfirmButton: false,
-                    timer: 1500
-                });
+                // Swal.fire({
+                //     position: 'top-end',
+                //     icon: 'success',
+                //     title: 'User created successfully.',
+                //     showConfirmButton: false,
+                //     timer: 1500
+                // });
                 
             }
         })

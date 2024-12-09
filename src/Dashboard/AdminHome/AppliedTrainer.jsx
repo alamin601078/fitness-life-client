@@ -1,4 +1,4 @@
-import Swal from "sweetalert2";
+// import Swal from "sweetalert2";
 import { axiosSecure } from "../../Hooks/useAxiosSecure";
 import { useEffect, useState } from "react";
 import { axiosPublic } from "../../Hooks/useAxiosPublic";
@@ -22,13 +22,13 @@ const AppliedTrainer = () => {
             console.log(res.data)
             if(res.data.modifinedCount > 0){
                 // refetch()
-                Swal.fire({
-                    position: "top-end",
-                    icon: "success",
-                    title:`${user.name} is an Admin Now`,
-                    showConfirmButton: false,
-                    timer: 1500
-                  });
+                // Swal.fire({
+                //     position: "top-end",
+                //     icon: "success",
+                //     title:`${user.name} is an Admin Now`,
+                //     showConfirmButton: false,
+                //     timer: 1500
+                //   });
             }
         })
     }
